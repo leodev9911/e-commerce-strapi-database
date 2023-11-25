@@ -43,6 +43,14 @@
       "relation": "manyToMany",
       "target": "api::subcategory.subcategory",
       "inversedBy": "products"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "isNew": {
+      "type": "boolean"
     }
   }
 }

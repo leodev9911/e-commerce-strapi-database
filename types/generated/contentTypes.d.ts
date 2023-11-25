@@ -744,6 +744,8 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'manyToMany',
       'api::subcategory.subcategory'
     >;
+    quantity: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<1>;
+    isNew: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
