@@ -5,16 +5,15 @@ module.exports = ({ env }) => {
 
   return {
     connection: {
-      client: 'postgres',
+      client: "postgres",
       connection: {
         host,
         port,
         database,
         user,
-        password,
-        ssl: { rejectUnauthorized: false },
+        password
       },
       debug: false,
     },
-  }
+  };
 };
